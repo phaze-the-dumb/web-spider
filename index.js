@@ -57,7 +57,6 @@ spider.queue('https://microsoft.com/', handleRequest);
 spider.queue('https://yahoo.com/', handleRequest);
 spider.queue('https://npmjs.com/', handleRequest);
 spider.queue('https://js.org/', handleRequest);
-spider.queue('https://discord.com/', handleRequest);
 spider.queue('https://twitter.com/', handleRequest);
 spider.queue('https://duckduckgo.com/', handleRequest);
 spider.queue('https://www.wikipedia.org/', handleRequest);
