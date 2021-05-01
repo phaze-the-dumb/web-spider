@@ -8,7 +8,7 @@ let sites = []
  
 var spider = new Spider({
     // How many requests can be run in parallel
-    concurrent: 5,
+    concurrent: 10,
     // How long to wait after each request
     delay: 0,
     // A stream to where internal logs are sent, optional
