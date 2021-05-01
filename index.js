@@ -85,7 +85,7 @@ app.get('/', async function(req, res){
 
 app.get('/api', async function(req, res){
     fs.readFile('./sites.json', 'utf8', function(err, data){
-        let sites1 = JSON.stringify(sites.concat(JSON.parse(data)));
+        let sites1 = sites.concat(JSON.parse(data));
 
         res.json(sites1)
     });
