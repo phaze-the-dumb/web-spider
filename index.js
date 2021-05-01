@@ -77,7 +77,7 @@ setInterval(function(){
             }
         });
     });
-}, 1000)
+}, 60000)
 
 app.get('/', async function(req, res){
     res.send('<center><h1>ItzWiresDev#6193</h1><hr />This server is part of the <a href="https://wiresdev.ga">wiresdev</a> network</center>')
