@@ -92,6 +92,10 @@ app.get('/api/dumped', async function(req, res){
     });
 })
 
+app.get('/api/mem', async function(req, res){
+    res.json(sites)
+})
+
 app.get('/api/addSite', async function(req, res){
     let url = new URL("https://api.wiresdev.ga" + req.url);
     let s = url.searchParams.get("s");
