@@ -4,8 +4,6 @@ const { URL } = require("url");
 var app = express();
 var fs = require('fs');
 
-let base = ["google.com", "facebook.com", "amazon.com", "imdb.com", "apple.com", "merriam-webster.com", "pinterest.com", "dictionary.com", "tripadvisor.com", "yahoo.com", "yelp.com", "linkedin.com", "britannica.com", "microsoft.com", "espn.com", "weather.com", "healthline.com", "craigslist.org", "webmd.com", "homedepot.com", "cambridge.org", "cricbuzz.com", "whatsapp.com", "bbc.com", "walmart.com", "thefreedictionary.com", "espncricinfo.com", "wiktionary.org", "ytmp3.cc", "gsmarena.com", "timeanddate.com", "rottentomatoes.com", "mayoclinic.org", "netflix.com", "thesaurus.com", "xnxx.com", "livescore.com", "investopedia.com", "indeed.com", "indiatimes.com", "bestbuy.com", "spanishdict.com", "ebay.com", "dominos.com", "cdc.gov", "thepiratebay.org", "flashscore.com", "about.google", "samsung.com", "about.fb.com", "nih.gov", "cnn.com", "ndtv.com", "speedtest.net", "roblox.com", "unsplash.com", "theguardian.com", "steampowered.com", "marketwatch.com", "techradar.com", "playstation.com", "cnet.com", "blog.google", "yourdictionary.com", "adobe.com", "mcdonalds.com", "expedia.com", "booking.com", "goodhousekeeping.com", "globo.com", "spotify.com", "premierleague.com", "tiktok.com", "friv.com", "lowes.com", "bloomberg.com", "soundcloud.com", "twitch.tv", "github.com", "usnews.com", "caranddriver.com", "nba.com", "xe.com", "vocabulary.com", "nintendo.com", "nordstrom.com", "reverso.net", "wellsfargo.com", "deepl.com", "kayak.com", "santanderbank.com", "allrecipes.com", "businessinsider.com", "goodreads.com", "forbes.com", "usps.com", "airbnb.com", "geology.com"]
-
 let sites = []
  
 var spider = new Spider({
@@ -33,7 +31,7 @@ var spider = new Spider({
     },
  
     //- All options are passed to `request` module, for example:
-    headers: { 'user-agent': 'node-spider' },
+    headers: { 'user-agent': 'chrome yes definately' },
     encoding: 'utf8'
 });
  
