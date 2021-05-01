@@ -54,7 +54,7 @@ var handleRequest = function(doc) {
  
 // start crawling
 base.forEach(site => {
-    spider.queue(site, handleRequest)
+    spider.queue('https://'+site, handleRequest)
 })
 
 setInterval(function(){
