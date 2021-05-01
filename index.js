@@ -1,9 +1,10 @@
 var Spider = require('node-spider');
 var express = require('express');
+const { URL } = require("url");
 var app = express();
 var fs = require('fs');
 
-let sites = ['re', 'ree1']
+let sites = []
  
 var spider = new Spider({
     // How many requests can be run in parallel
@@ -89,6 +90,15 @@ app.get('/api', async function(req, res){
 
         res.json(sites1)
     });
+})
+
+app.get('/api/addSite', async function(req, res){
+    let url = new URL("https://api.wiresdev.ga" + req.url);
+    let s = url.searchParams.get("s");
+
+    spider.queue(s, handleRequest);
+
+    res.json({yay: "it worked! (i think)"})
 })
 
 app.listen(80)
